@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Pass</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yet another secure password generator">
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>🔑 Crypto Pass</h1>
+            <small>Zero-configuration secure password generator</small>
+        </header>
+        <main>
+            <div class="password">
+                <input type="text" value="" id="password-text" readonly> <button id="refresh-btn">🔄</button>
+            </div>
+
+            <h2>More options</h2>
+            <div class="more-options">
+                <section>
+                    <h3>Light</h3>
+                    <div class="more-options-values"></div>
+                </section>
+                <section>
+                    <h3>Optimal</h3>
+                    <div class="more-options-values"></div>
+                </section>
+                <section>
+                    <h3>Strong</h3>
+                    <div class="more-options-values"></div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>
+                All passwords are generated in your browser with <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API" target="_blank">Crypto API</a>.
+                There is no backend or any spy JavaScript snippets. All sources available at <a href="https://github.com/eugenezadorin/crypto-pass" target="_blank">Github</a>.
+            </p>
+            <p>
+                Please let me know what you think via <a href="https://twitter.com/eugenezadorin" target="_blank">Twitter</a> or <a href="https://github.com/eugenezadorin/crypto-pass/issues" target="_blank">github issues</a>.
+            </p>
+        </footer>
+    </section>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
